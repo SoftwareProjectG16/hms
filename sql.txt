@@ -1,0 +1,1 @@
+INSERT INTO `hms`.`person` (`id`, `fullName`, `userName`, `uPassword`, `gender`, `birthday`, `email`, `mobile`, `phone`, `city`, `address`, `type`) VALUES (NULL, 'moh', 'admin', 'padmin', 'male', '2016-12-07', 'admin@ex.com', '011', '02', 'cairo', 'st', 'admintype');
