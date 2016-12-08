@@ -6,12 +6,12 @@
        $user =new person ;
     if($user->login($sql)==1){
        $_SESSION['user']=$user;
-       if ($_SERVER['PHP_SELF'] == "/hospital/login.php" ||$_SERVER['PHP_SELF'] == "/hospital/newpatient.php"){header("location:index.php");}
+       if ($_SERVER['PHP_SELF'] == "/hms/login.php" ||$_SERVER['PHP_SELF'] == "/hms/newpatient.php"){header("location:index.php");}
     }else{
-      if ($_SERVER['PHP_SELF'] != "/hospital/login.php" && $_SERVER['PHP_SELF'] != "/hospital/newpatient.php"){header("location:login.php");}
+      if ($_SERVER['PHP_SELF'] != "/hms/login.php" && $_SERVER['PHP_SELF'] != "/hms/newpatient.php"){header("location:login.php");}
        }
  }else{
-   if ($_SERVER['PHP_SELF'] != "/hospital/login.php" && $_SERVER['PHP_SELF'] != "/hospital/newpatient.php"){header("location:login.php");}
+   if ($_SERVER['PHP_SELF'] != "/hms/login.php" && $_SERVER['PHP_SELF'] != "/hms/newpatient.php"){header("location:login.php");}
  }
 
 
