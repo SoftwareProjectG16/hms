@@ -4,29 +4,15 @@ include ('config/config.php');
 require ('phpfunctions/validatesession.php');
 $errMsg="";
  //$_SESSION['prePage']="http://".$host.$_SERVER['PHP_SELF'] ;
- //echo $_SESSION['prePage'];
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-       if ($_POST['fullName'] != "" && $_POST['username'] != "" &&
-            $_POST['uPassword'] != "" && $_POST['email'] != "" &&
-            $_POST['fullName'] != "" && $_POST['mobile'] != "") {
-
-
-    $myusername = mysqli_real_escape_string($conn,$_POST['username']);
-    $mypassword = mysqli_real_escape_string($conn,$_POST['uPassword']);
-	$sql = "SELECT `id`, `fullName`, `userName`, `uPassword`, `gender`, `birthday`, `email`, `mobile`, `phone`, `city`, `address`, `type` FROM `person` WHERE `userName` = '$myusername' AND `uPassword` = '$mypassword'" ;
-
-    }else {$errMsg="PLease Enter Valid Data !!";}
-
-
-
-}
+ //echo $_SESSION['prePage']
   //echo $_SESSION['user']->userName;
-
+$p=new patient;
+ $p->newPatient();
 
 ?>
        <head>
        <script>
-            function validateForm() {
+            function validateForm1() {
                var fullName = document.forms["myForm"]["fullName"].value;
                if(fullName == "") {alert("Please Enter Your Name"); return false;}
                //----------------------------------
@@ -105,8 +91,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                  <div style="font-size: x-large">
                                    Gender :&nbsp;&nbsp;&nbsp;
-                                <input type="radio" name="gender" value="male" checked> Male  &nbsp;&nbsp;&nbsp;
-                                    <input type="radio" name="gender" value="female"> Female
+                                <input type="radio" name="gender" value=1 checked> Male  &nbsp;&nbsp;&nbsp;
+                                    <input type="radio" name="gender" value=0> Female
                                    </div>
 
                                 <div style="font-size: x-large">
@@ -127,21 +113,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                                     </span>
                               <input name="mobile" class="form-control" type="text" placeholder="Mobile Number">
                                 </div>
-                                <div class="input-prepend">
-                                <span class="add-on" href="#">
-                                    <i class="icon-key"></i>
-                                    </span>
-                              <input name="phone" class="form-control" type="text" placeholder="Land Phone Number">
-                                </div>
-
-
-                                <div class="input-prepend">
-                                <span class="add-on" href="#">
-                                    <i class="icon-key"></i>
-                                    </span>
-                              <input name="city" class="form-control" type="text" placeholder="City">
-                                </div>
-
                                  <div class="input-prepend">
                                 <span class="add-on" href="#">
                                     <i class="icon-key"></i>

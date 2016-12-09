@@ -5,17 +5,13 @@ require ('phpfunctions/validatesession.php');
 $errMsg="";
  //$_SESSION['prePage']="http://".$host.$_SERVER['PHP_SELF'] ;
  //echo $_SESSION['prePage'];
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-	$myusername = mysqli_real_escape_string($conn,$_POST['username']);
-    $mypassword = mysqli_real_escape_string($conn,$_POST['password']);
-	$sql = "SELECT `id`, `fullName`, `userName`, `uPassword`, `gender`, `birthday`, `email`, `mobile`, `phone`, `city`, `address`, `type` FROM `person` WHERE `userName` = '$myusername' AND `uPassword` = '$mypassword'" ;
-	$user =new person ;
-    if($user->login($sql)== 1){
-        $_SESSION['user']= $user;
-         header("location: index.php");
-    }else {$errMsg="Wrong Username or Password !!!";}
-
-}
+$user =new person ;
+$v=$user->loginPost();
+if($v == 1){ 
+    // $errMsg="Good !!!";
+      header("location: index.php");
+ }
+elseif($v== -1)  {$errMsg="Wrong Username or Password !!!";}
   //echo $_SESSION['user']->userName;
 
 

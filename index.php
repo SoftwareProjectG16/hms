@@ -80,16 +80,6 @@
    	<br>
 	<ul class="nav nav-collapse collapse nav-collapse-primary">
 
-
-        <!------dashboard----->
-		<li class="dark-nav active">
-			<span class="glow"></span>
-				<a href="#">
-					<i ></i>
-					<span>Dashboard</span>
-				</a>
-		</li>
-        
         <!------department----->
 		<li class="">
 			<span class="glow"></span>
@@ -285,62 +275,13 @@
                 </div>
             </div>
         </div>
-        
+        </div>
 
 
         
                 <div class="container-fluid padded">
 <p></p>
-<div class="row" style="padding-left: 16px;background:#E6E4E4;padding: 17px;margin-top: -23px;">
-  <a href="#" style="text-decoration: none;color: white;"><div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-<div style="background:#F15500;padding-top: 4px;">
-<h2 style="text-align: right;color: white;padding-right: 10px;padding-bottom: 7px;font-weight: 300;font-size: 20px;font-family: &#39;Lato&#39;, sans-serif;letter-spacing: 0.4px;"><i aria-hidden="true" style="font-size: 43px;margin-bottom: 10px;"></i><br>Doctors<br><span style="
-    font-size: 44px;
-">33</span></h2>
-</div>
-</div></a>
-<a href="#" style="text-decoration: none;color: white;"><div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-<div style="background:#0AABBA;padding-top: 4px;">
-<h2 style="text-align: right;color: white;padding-right: 10px;padding-bottom: 7px;font-weight: 300;font-size: 20px;font-family: &#39;Lato&#39;, sans-serif;letter-spacing: 0.4px;"><i  aria-hidden="true" style="font-size: 43px;margin-bottom: 10px;"></i><br>Patients<br><span style="
-    font-size: 44px;
-">20</span></h2>
-</div>
-</div></a>
-<a href="#" style="text-decoration: none;color: white;"><div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-<div style="background:#0A516D;padding-top: 4px;">
-<h2 style="text-align: right;color: white;padding-right: 10px;padding-bottom: 7px;font-weight: 300;font-size: 20px;font-family: &#39;Lato&#39;, sans-serif;letter-spacing: 0.4px;"><i  aria-hidden="true" style="font-size: 43px;margin-bottom: 10px;"></i><br>Nurse<br><span style="
-    font-size: 44px;
-">12</span></h2>
-</div>
-</div></a>
-</div>
-<div class="row" style="padding-left: 1px;background:#E6E4E4;padding: 17px;margin-top: -23px;">
-<a href="#" style="text-decoration: none;color: white;"><div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-<div style="background:#033649;padding-top: 4px;">
-<h2 style="text-align: right;color: white;padding-right: 10px;padding-bottom: 7px;font-weight: 300;font-size: 20px;font-family: &#39;Lato&#39;, sans-serif;letter-spacing: 0.4px;"><i  aria-hidden="true" style="font-size: 43px;margin-bottom: 10px;"></i><br>Ambulance<br><span style="
-    font-size: 44px;
-">4</span></h2>
-</div>
-</div></a>
-<a href="#" style="text-decoration: none;color: white;"><div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-<div style="background:#3A89C9;padding-top: 4px;">
-<h2 style="text-align: right;color: white;padding-right: 10px;padding-bottom: 7px;font-weight: 300;font-size: 20px;font-family: &#39;Lato&#39;, sans-serif;letter-spacing: 0.4px;"><i  aria-hidden="true" style="font-size: 43px;margin-bottom: 10px;"></i><br>Pharmacists<br><span style="
-    font-size: 44px;
-">14</span></h2>
-</div>
-</div></a>
-<a href="#" style="text-decoration: none;color: white;"><div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-<div style="background:#FFAB07;padding-top: 4px;">
-<h2 style="text-align: right;color: white;padding-right: 10px;padding-bottom: 7px;font-weight: 300;font-size: 20px;font-family: &#39;Lato&#39;, sans-serif;letter-spacing: 0.4px;"><i aria-hidden="true" style="font-size: 43px;margin-bottom: 10px;"></i><br>Laboratorist<br><span style="
-    font-size: 44px;
-">12</span></h2>
-</div>
-</div></a>
-</div>
-</div>
-  <div style="clear:both;color:#aaa; padding:20px;">
-    	<hr><center>© 2016 <a target="_blank" href="#">Hospital Management System - <br>Developed &amp; Design by <br><img src="./Admin Dashboard _ YOUR HOSPITAL NAME_files/logo(1).png" style="width:267px;margin-top:8px;"></a></center>
-    </div>    </div>
-    
+ </div>
+
 
 <div class="ex-tooltip"></div><div id="galleryOverlay" style="display: none;"><div id="gallerySlider"></div><a id="prevArrow"><i ></i></a><a id="nextArrow"><i class="icon-angle-right icon-4x"></i></a></div></body></html>
