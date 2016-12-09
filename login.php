@@ -7,7 +7,7 @@ $errMsg="";
  //echo $_SESSION['prePage'];
 $user =new person ;
 $v=$user->loginPost();
-if($v == 1){ 
+if($v == 1){
     // $errMsg="Good !!!";
       header("location: index.php");
  }
@@ -77,7 +77,7 @@ elseif($v== -1)  {$errMsg="Wrong Username or Password !!!";}
                             </form>                            <div>
                                 <a data-toggle="modal" style="display:inherit;" href="#modal-password">
                                     Forgot Password?                                </a>
-                                <h2>    <a data-toggle="modal" style="display:inherit;" href="/hospital/newpatient.php">
+                                <h2>    <a data-toggle="modal" style="display:inherit;" href="/hms/newpatient.php">
                                     New Patient ?                                </a></h2>
                             </div>
                         </div>

@@ -7,8 +7,9 @@ $errMsg="";
  //echo $_SESSION['prePage']
   //echo $_SESSION['user']->userName;
 $p=new patient;
- $p->newPatient();
-
+$x=$p->newPatient();
+if($x ==1){header("location: msg.php");}
+elseif($x==-1){$errMsg=$_SESSION['msg'];}
 ?>
        <head>
        <script>
